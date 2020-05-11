@@ -16,7 +16,7 @@
     <script type='text/javascript' src='js/jquery.ba-hashchange.min.js'></script>
     <script>
         //aqui se cambia la CLAVE 
-        var pruebasClave = "papelhigienico"
+        var pruebasClave = ["papelhigienico","rollo","papel","rollodepapel"]
         //aqui se cambian las PISTAS 
         var pistaTexto = ["¿Hay algo distinto en las imágenes?","Mira por la cama", "Prueba a poner el nombre de esa cosa como clave", "Hay varias formas de llamarlo, puede que no estes introduciendo la correcta, recuerda que las claves son en minusculas y todo junto si es una palabra compuesta."]
         var number = 0
@@ -25,7 +25,7 @@
 
             var input = $("#name").val();
 
-            if (input == pruebasClave) {
+            if (input == pruebasClave[0] || input == pruebasClave[1] || input == pruebasClave[2] || input == pruebasClave[3]) {
                 alert("Bien!");
                 //aqui se cambia la pagina 
                 window.location.replace("numeros.html");
